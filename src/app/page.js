@@ -1,13 +1,23 @@
-"use client";
+import Hero from "@/components/Hero";
 
-
-export default function HomePage() {
-
+export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen p-4 bg-gray-100">
-      <h1 className="text-4xl font-bold mb-4">Welcome to Core X Fitness!</h1>
-      <p className="text-lg mb-6">This is a sample page using the app router.</p>
-      
+    <main>
+      <Hero />
+      <section className="py-24 px-6 max-w-7xl mx-auto grid md:grid-cols-3 gap-12">
+        <div className="text-center">
+          <h3 className="font-heading text-4xl text-gold mb-2">MODERN GEAR</h3>
+          <p className="text-gray-400 font-light">Industry leading equipment for maximum performance.</p>
+        </div>
+        <div className="text-center">
+          <h3 className="font-heading text-4xl text-gold mb-2">EXPERT COACHES</h3>
+          <p className="text-gray-400 font-light">Personalized guidance to smash your fitness goals.</p>
+        </div>
+        <div className="text-center">
+          <h3 className="font-heading text-4xl text-gold mb-2">ELITE RECOVERY</h3>
+          <p className="text-gray-400 font-light">Premium sauna and recovery zones post-workout.</p>
+        </div>
+      </section>
     </main>
   );
 }
